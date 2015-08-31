@@ -1,4 +1,4 @@
-This repository contains a series of scripts used for our standard 2bRAd analysis pipeline.
+This repository contains a series of scripts used for general DNA sequence analysis.
 Several scripts also rely on the following software, which will need to be installed and in your path:
 BioPerl			http://www.bioperl.org/wiki/Main_Page
 
