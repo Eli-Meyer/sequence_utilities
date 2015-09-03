@@ -1,0 +1,59 @@
+-------------------------
+ExcludeFasta.pl
+-------------------------
+
+Excludes the sequences identified in a user supplied list from the FASTA file
+supplied by the user.
+Usage: ExcludeFasta.pl list input > output
+Where:	list:	a list of sequence IDs
+	input:	a FASTA file containing multiple sequences.
+	output:	a name for the output file (all sequences from input not named in list)
+
+-------------------------
+FastaStats.pl
+-------------------------
+
+Summarizes length statistics for a set of DNA sequences.
+Usage: FastaStats.pl input.fasta
+
+-------------------------
+IncludeFasta.pl
+-------------------------
+
+Excludes the sequences identified in a user supplied list from the FASTA file
+supplied by the user.
+Usage: IncludeFasta.pl list input output
+Where:	list:	a list of sequence IDs
+	input:	a FASTA file containing multiple sequences.
+	output:	a name for the output file (all sequences from input not named in list)
+
+-------------------------
+RandomDrawFastq.pl
+-------------------------
+
+Draws the specified number of sequences randomly from an input FASTQ file.
+Usage: RandomDrawFastq.pl input num_seq output
+
+-------------------------
+RandSeqGen.pl
+-------------------------
+
+Generates random sequences (DNA or protein, as specified by the user).
+Usage: RandSeqGen.pl number option length type output
+	(e.g. RandSeqGen.pl 10 r 200 DNA random_dna.fasta)
+Where:	number =	number of sequences to generate.
+	option =	f for fixed, uniform length, r for random lengths.
+	length =	average length of random sequences.
+	type =		DNA or protein.
+	output =	a name for the output file.
+
+-------------------------
+SeqLengthDist.pl
+-------------------------
+
+Summarizes length distribution for a collection of DNA sequences (FASTA)
+Usage: SeqLengthDist.pl input max_bin bin_size
+Where:	input:	FASTA-formatted file containing multiple DNA sequences.
+	max_bin:	sequences longer than this will all be counted in the largest bin.
+	bin_size:	size of each bin in bp.
+
