@@ -57,3 +57,13 @@ Where:	input:	FASTA-formatted file containing multiple DNA sequences.
 	max_bin:	sequences longer than this will all be counted in the largest bin.
 	bin_size:	size of each bin in bp.
 
+-------------------------
+unique_fastq.pl
+-------------------------
+
+Extracts unique sequences from a fastq file, eliminating duplicated records.
+Usage: unique_fastq.pl input.fastq output.fastq
+Where:
+	input.fastq:	FASTQ input file.
+	output.fastq:	a name for the output file, a FASTQ file without any duplicated records.
+
